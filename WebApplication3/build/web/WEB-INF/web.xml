@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.javax.lex.countryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>language</servlet-name>
+        <servlet-class>com.javax.lex.LanguageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>seq</servlet-name>
+        <servlet-class>com.javax.lex.SecurityQuesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/country</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>language</servlet-name>
+        <url-pattern>/language</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>seq</servlet-name>
+        <url-pattern>/seq</url-pattern>
+    </servlet-mapping>
+</web-app>
