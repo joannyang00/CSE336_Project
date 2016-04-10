@@ -13,6 +13,10 @@
         <servlet-name>language</servlet-name>
         <servlet-class>com.javax.lex.LanguageServlet</servlet-class>
     </servlet>
+        <servlet>
+        <servlet-name>bean</servlet-name>
+        <servlet-class>com.javax.lex.BeansServlet</servlet-class>
+    </servlet>
     <servlet>
         <servlet-name>seq</servlet-name>
         <servlet-class>com.javax.lex.SecurityQuesServlet</servlet-class>
@@ -28,5 +32,9 @@
     <servlet-mapping>
         <servlet-name>seq</servlet-name>
         <url-pattern>/seq</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>bean</servlet-name>
+        <url-pattern>/Beans</url-pattern>
     </servlet-mapping>
 </web-app>
